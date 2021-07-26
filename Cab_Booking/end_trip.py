@@ -1,0 +1,2 @@
+class EndTrip:
+    pass
