@@ -8,19 +8,19 @@ class Cab_booking():
 
         print("\n$$$$$$$_____Code Written By Ankur Pandey_____$$$$$$$\n")
 
-        self.user = int(input("Please enter 1 if you are a rider\nPlease enter 2 if you are a driver\nPlease enter 3 if you want to exit from application\n"))
+        self.user = input("Please enter R if you are a rider\nPlease enter D if you are a driver\nPlease enter Q if you want to exit from application\n").upper()
     def print_cab_booking(self):
         return self.user
     
     def User_Choice(self):
 
-        if self.user == 1:
+        if self.user == "R":
             Rider()
         
-        elif self.user ==2:
-            Driver() 
+        elif self.user == "D":
+            Driver()
 
-        elif self.user == 3:
+        elif self.user == "Q":
             quit()
         
         else:
@@ -30,7 +30,7 @@ class Cab_booking():
 
 
 cab_obj=Cab_booking()
-print(cab_obj)
+print(cab_obj.User_Choice())
 
 # driver_obj=Driver()
 # print(driver_obj.driver_details())
