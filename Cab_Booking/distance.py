@@ -5,29 +5,6 @@ class Distance:
         self.x2=None
         self.y1=None
         self.y2=None
-    def distance_input(self):
-
-        print("Your Location Cordinates")
-
-        if self.x1==None:
-            cord_1=int(input("Enter X1 cordinate:"))
-            self.x1=cord_1
-
-        if self.y1==None:
-            cord_3=int(input("Enter Y1 cordinate:"))
-            self.y1=cord_3
-
-        print("your destination cordinates")
-
-        if self.x2==None:
-            cord_2=int(input("Enter X2 cordinate:"))
-            self.x2=cord_2
-
-        if self.y2==None:
-            cord_4=int(input("Enter Y2 cordinate:"))
-            self.y2=cord_4
-
-        return self.x1,self.y1,self.x2,self.y2
 
     def total_distance(self):
         xy=math.sqrt(((self.x1-self.x2)**2)+((self.y1-self.y2)**2))
