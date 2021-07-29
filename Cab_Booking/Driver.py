@@ -3,7 +3,7 @@ class Driver:
         self.name=input("Enter Driver Name:")
         self.age=int(input("Enter the Age:"))
         self.mobile_no=int(input("Enter the Mobile Number:"))
-        self.driver_coord=int(input("Enter your Coordinates in x y with space")).split()
+        self.driver_coord=input("Enter your Coordinates in x y with space").split()
         self.driver_status=input("Available for booking yes or no :").upper()
         self.driver_tripStatus=False
         self.cab_driver=1
@@ -15,7 +15,7 @@ class Driver:
         return self.max_distance
 
     def Driver_Account_Login_Page(self):
-        print(f"-----------------------------\nhi {self.name}.Welcome to your account.Please find the account details below.\n-----------------------------\nName : {self.Driver_Name} \nContactNo : {self.Driver_Contact_no} \nVehicle No : {self.Vehicle_no}\nVehicle Model Name: {self.Vehicle_Model_Name}\nCab location : {self.Driver_x_y_coordinates}")
+        print(f"-----------------------------\nhi {self.name}.Welcome to your account.Please find the account details below.\n-----------------------------\nName : {self.name} \nContactNo : {self.mobile_no} \nCab location : {self.driver_coord}")
         if self.driver_status:
 
             print("Status : Available to accept a ride-----------------------------")
@@ -42,3 +42,9 @@ class Driver:
         else:
             print("Wrong input please try again.Routing you back to your account page")
             self.Driver_Account_Login_Page()
+
+
+driver_obj=Driver()
+print(driver_obj.driver_details())
+print(driver_obj.max_dist())
+print(driver_obj.Driver_Account_Login_Page())
