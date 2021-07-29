@@ -1,9 +1,12 @@
+from driverAvailbility import Avaiability
+from cabLocation import Location
+
 class Driver:
     def __init__(self):
         self.name=input("Enter Driver Name:")
         self.age=int(input("Enter the Age:"))
         self.mobile_no=int(input("Enter the Mobile Number:"))
-        self.driver_coord=input("Enter your Coordinates in x y with space").split()
+        self.driver_coord=list(map(float,input("Please enter x , y coordinates with spaces").split()))
         self.driver_status=input("Available for booking yes or no :").upper()
         self.driver_tripStatus=False
         self.cab_driver=1
@@ -36,8 +39,9 @@ class Driver:
             self.Driver_Location_Updation()
         
         elif x == 3:
-            #Cab_booking()
-            pass
+
+            self.Cab_booking()
+
         
         else:
             print("Wrong input please try again.Routing you back to your account page")
