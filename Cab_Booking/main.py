@@ -3,7 +3,7 @@ from Driver import Driver
 from Rider import Rider
 from distance import Distance
 
-class Cab_booking():
+class Cab_booking:
     def __init__(self):
 
         print("\n$$$$$$$_____Code Written By Ankur Pandey_____$$$$$$$\n")
