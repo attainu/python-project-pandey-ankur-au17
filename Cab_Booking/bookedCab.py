@@ -2,7 +2,7 @@ class CabBooked:
     def Booking(self):
             while True:
                 try:
-                    
+                    self.rider_coord=[10,20]
                     if self.rider_coord == [] or self.rider_coord[0] == None or self.rider_coord[1] == None:
                         raise Exception
                     break
@@ -32,3 +32,6 @@ class CabBooked:
                 print("Your Booking is confirmed \n","your Trip_ID is : ",self.Trip_ID,"\n" , "Your Driver name is : ",self.name,"\n")
                 self.Current_LiveBooking_data = self.search_Status
                 self.Rider_Account_Login_Page()
+
+obj=CabBooked()
+print(obj.Booking())

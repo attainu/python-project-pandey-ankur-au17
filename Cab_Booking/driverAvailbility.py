@@ -1,4 +1,4 @@
-class Avaiability:
+class Avaiability():
     def Driver_Status_Updation(self):
         from Driver import Driver
 
@@ -23,3 +23,6 @@ class Avaiability:
             else:
                 print("Wrong input.Please try again")
                 self.Driver_Status_Updation()
+
+obj=Avaiability()
+print(obj.Driver_Status_Updation())
