@@ -42,5 +42,5 @@ class Rider:
             print("Wrong input.Routing you back to your account page.")
             self.Rider_Account_Login_Page()
 
-obj=Rider()
-print(obj.Rider_Account_Login_Page())
+# obj=Rider()
+# print(obj.Rider_Account_Login_Page())

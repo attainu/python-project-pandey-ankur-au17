@@ -10,6 +10,7 @@ class Location:
         else:
             while True:
                 try:
+                    #location call
                     if self.driver_coord == [] or self.driver_coord[0] == None or self.driver_coord[1] == None:
                         raise Exception()
                     break
@@ -18,3 +19,6 @@ class Location:
             self.driver_coord = self.driver_coord
             print("coordinates updated sucessfully")
             self.Driver_Account_Login_Page()
+
+obj=Location()
+print(obj.Driver_Location_Updation())

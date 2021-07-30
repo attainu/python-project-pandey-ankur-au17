@@ -1,10 +1,10 @@
 class Driver:
-    def __init__(self):
-        self.name=input("Enter Driver Name:")
-        self.age=int(input("Enter the Age:"))
-        self.mobile_no=int(input("Enter the Mobile Number:"))
-        self.driver_coord=list(map(float,input("Please enter x , y coordinates with spaces").split()))
-        self.driver_status=input("Available for booking yes or no :").upper()
+    def __init__(self, **kwargs):
+        self.name=kwargs.get('driver_name')
+        self.age=kwargs.get('driver_age')
+        self.mobile_no=kwargs.get('mobile_no')
+        self.driver_coord=kwargs.get('driver_coord')
+        self.driver_status=kwargs.get('driver_status')
         self.driver_tripStatus=False
         self.cab_driver=1
     def driver_details(self):
@@ -47,4 +47,5 @@ class Driver:
         else:
             print("Wrong input please try again.Routing you back to your account page")
             self.Driver_Account_Login_Page()
-
+# deepak=Driver(driver_name="Deepak",driver_age=23,mobile_no=7854788558,driver_coord=[1,2],driver_status=False)
+# print(deepak.driver_details())
