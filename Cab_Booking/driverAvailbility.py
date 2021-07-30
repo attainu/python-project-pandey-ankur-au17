@@ -1,6 +1,6 @@
-from Driver import Driver
 class Avaiability:
     def Driver_Status_Updation(self):
+        from Driver import Driver
 
         if self.driver_tripStatus == True:
             print("----------------------------------------------------\nYou have a ongoing trip.you can only change your status once your trip is ended.Please try after customer ends the trip.\n----------------------------------------------------")

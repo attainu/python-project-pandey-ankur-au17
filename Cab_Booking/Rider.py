@@ -1,4 +1,4 @@
-from main import Cab_booking
+import main
 class Rider:
     def __init__(self):
         self.name=input("Enter Rider Name:")
@@ -36,7 +36,7 @@ class Rider:
             pass
         
         if no == 4:
-            Cab_booking()
+            main.Cab_booking()
         else:
             print("Wrong input.Routing you back to your account page.")
             self.Rider_Account_Login_Page()

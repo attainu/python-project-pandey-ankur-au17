@@ -1,6 +1,3 @@
-from driverAvailbility import Avaiability
-from cabLocation import Location
-
 class Driver:
     def __init__(self):
         self.name=input("Enter Driver Name:")
@@ -18,6 +15,10 @@ class Driver:
         return self.max_distance
 
     def Driver_Account_Login_Page(self):
+        from main import Cab_booking
+        from cabLocation import Location
+        from driverAvailbility import Avaiability
+
         print(f"-----------------------------\nhi {self.name}.Welcome to your account.Please find the account details below.\n-----------------------------\nName : {self.name} \nContactNo : {self.mobile_no} \nCab location : {self.driver_coord}")
         if self.driver_status:
 
@@ -40,15 +41,10 @@ class Driver:
         
         elif x == 3:
 
-            self.Cab_booking()
+            Cab_booking()
 
         
         else:
             print("Wrong input please try again.Routing you back to your account page")
             self.Driver_Account_Login_Page()
 
-
-driver_obj=Driver()
-print(driver_obj.driver_details())
-print(driver_obj.max_dist())
-print(driver_obj.Driver_Account_Login_Page())

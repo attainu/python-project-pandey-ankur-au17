@@ -1,6 +1,6 @@
-from Driver import Driver
 class Location:
     def Driver_Location_Updation(self):
+        from Driver import Driver
 
     
         if  self.driver_tripStatus== True:

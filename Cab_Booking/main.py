@@ -31,6 +31,10 @@ class Cab_booking:
 
 cab_obj=Cab_booking()
 print(cab_obj.User_Choice())
+driver_obj=Driver()
+print(driver_obj.driver_details())
+print(driver_obj.max_dist())
+print(driver_obj.Driver_Account_Login_Page())
 
 # driver_obj=Driver()
 # print(driver_obj.driver_details())
