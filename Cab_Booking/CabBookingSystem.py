@@ -579,8 +579,8 @@ def admin_view():
 def main_view():
     global masterDriver_U
     global masterRider_U
-    print("\n*******_____Cab Booking System_____*******\n")
-    user = (input("Please enter R if you are a rider\nPlease enter D if you are a driver\nPlease enter A if you are an administrator\nPlease enter E if you want to exit from application\n")).upper()
+    print("\n$$$$$$$$$$$$$$$$_____Cab Booking System_____$$$$$$$$$$$$$$$$\n_______________________________________________________________Made by:-ANKUR PANDEY\n")
+    user = (input("Please enter R if you are a Rider\nPlease enter D if you are a Driver\nPlease enter A if you are an Administrator\nPlease enter E if you want to Exit from Application\n")).upper()
     if user == "R":
         rider_view()
     
